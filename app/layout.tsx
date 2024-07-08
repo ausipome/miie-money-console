@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import Image from 'next/image';
 import './globals.css';
+import ConsoleNavbar from "@/components/ConsoleNavbar";
 
 const roboto = Roboto({
   weight: '400',
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Image src="/icon.png" alt="Miie Money logo which is a pink and blue smile formed in the shape of an M" width={140} height={50} />
       </div>
     </header>
+    <ConsoleNavbar />
         {children}
         </body>
     </html>
