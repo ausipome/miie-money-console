@@ -24,10 +24,9 @@ export default function RootLayout({
       <body className={roboto.className}>
       <header className="headerStyle">
       <div className="logoContainerStyle">
-        <Image src="/icon.png" alt="Miie Money logo which is a pink and blue smile formed in the shape of an M" width={140} height={50} />
+        <Image src="/icon_01_background.png" alt="Miie Money logo which is a pink and blue smile formed in the shape of an M" width={60} height={60} />
       </div>
     </header>
-    <ConsoleNavbar />
         {children}
         </body>
     </html>
