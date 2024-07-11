@@ -1,3 +1,4 @@
+import {Providers} from "./providers";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import Image from 'next/image';
@@ -21,12 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-      <header className="headerStyle">
+      <header className="headerStyle border-slate-100 border-b-2 border-solid">
       <div className="ml-4">
         <Image src="/icon_01_background.png" alt="Miie Money logo which is a pink and blue smile formed in the shape of an M" width={60} height={60} />
       </div>
     </header>
+    <Providers>
         {children}
+        </Providers>
         </body>
     </html>
   );
