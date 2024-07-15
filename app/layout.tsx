@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-      <header className="headerStyle border-slate-100 border-b-2 border-solid">
+      <header className="headerStyle border-slate-400 border-b-1 border-solid">
       <div className="ml-4">
         <Image src="/icon_01_background.png" alt="Miie Money logo which is a pink and blue smile formed in the shape of an M" width={60} height={60} />
       </div>
