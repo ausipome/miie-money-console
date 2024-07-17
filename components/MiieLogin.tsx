@@ -1,15 +1,15 @@
 'use client'
 
 import React, { useState } from 'react';
-import { useRouter } from 'next/router';
 import useForm from '../hooks/useForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+
+
 export default function MiieLogin() {
 
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [error, setError] = useState('');
-    const router = useRouter();
 
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
@@ -35,7 +35,7 @@ export default function MiieLogin() {
           if (response.ok) {
             const data = await response.json();
             localStorage.setItem('token', data.token);
-            router.push('/dashboard');
+            console.log(data.token);
           } else {
             setError('Invalid email or password');
           }
